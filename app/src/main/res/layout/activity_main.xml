@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#101C35">
+        <Button android:id="@+id/backButton" android:layout_width="38dp" android:layout_height="42dp" android:text="‹" android:textSize="25sp" android:textColor="#FFFFFF" android:background="@android:drawable/btn_default_small" />
+        <Button android:id="@+id/forwardButton" android:layout_width="38dp" android:layout_height="42dp" android:text="›" android:textSize="25sp" android:textColor="#FFFFFF" android:background="@android:drawable/btn_default_small" />
+        <EditText android:id="@+id/addressBar" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:singleLine="true" android:imeOptions="actionGo" android:hint="Search or enter address" android:textColor="#17233B" android:textColorHint="#64718A" android:paddingLeft="10dp" android:paddingRight="10dp" android:background="#FFFFFF" />
+        <Button android:id="@+id/goButton" android:layout_width="42dp" android:layout_height="42dp" android:text="GO" android:textSize="12sp" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/menuButton" android:layout_width="38dp" android:layout_height="42dp" android:text="⋮" android:textSize="22sp" android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/webContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#101C35">
+        <Button android:id="@+id/homeButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="HOME" android:textSize="10sp" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/bookmarksButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="SAVED" android:textSize="10sp" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/tabsButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="TABS" android:textSize="10sp" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/historyButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="HISTORY" android:textSize="10sp" android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
