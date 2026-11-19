@@ -1,229 +1,159 @@
-# ⭐ STAR BROWSER LEGACY 1.0
+# ⭐ STAR BROWSER LEGACY
 
-### POWERED BY STAR
+### Version 1.0.0 | Powered by STAR
 
-**یک مرورگر وب سبک، مستقل و کاربردی برای دستگاه‌های اندرویدی قدیمی**
+**A Lightweight Android Web Browser Designed with Legacy Devices in Mind.**
+
+**یک مرورگر وب سبک برای اندروید، با تمرکز بر دستگاه‌های قدیمی و تجربه‌ای ساده از وب‌گردی.**
 
 ---
 
-## 🌐 درباره پروژه
+## 🌐 About the Project | درباره پروژه
 
-STAR BROWSER LEGACY یک پروژه مرورگر وب برای سیستم‌عامل Android است که با هدف ارائه تجربه‌ای ساده، قابل‌دسترس و کاربردی از وب‌گردی توسعه داده شده است.
+**STAR BROWSER LEGACY** is an independent Android browser project developed to provide a simple and accessible web browsing experience, especially for older Android devices with limited hardware resources.
 
-هدف اصلی این پروژه، فراهم‌کردن امکان استفاده از قابلیت‌های پایه مرورگرهای امروزی روی گوشی‌ها و دستگاه‌های اندرویدی قدیمی است؛ دستگاه‌هایی که به دلیل محدودیت سخت‌افزاری یا نسخه قدیمی سیستم‌عامل، ممکن است در اجرای مرورگرهای جدید با مشکلاتی روبه‌رو شوند.
+The project focuses on simplicity, lightweight design, accessibility, and compatibility with legacy Android versions.
 
-این پروژه تلاش می‌کند با رابط کاربری اختصاصی، ساختار سبک و استفاده از Android WebView، یک مرورگر مستقل و قابل توسعه ایجاد کند.
+Our goal is to make basic web browsing more accessible on devices that may struggle with newer and more resource-intensive browser applications.
 
-STAR BROWSER LEGACY فقط یک صفحه جست‌وجو نیست؛ بلکه پایه‌ای برای ساخت یک مرورگر کامل با امکاناتی مانند مدیریت تب‌ها، نشانک‌ها، تاریخچه، دانلودها و تنظیمات اختصاصی است.
+**مرورگر STAR BROWSER LEGACY** یک پروژه مستقل برای سیستم‌عامل اندروید است که با هدف فراهم‌کردن تجربه‌ای ساده، سبک و کاربردی از وب‌گردی توسعه داده شده است.
 
-## 🎯 اهداف اصلی
+تمرکز اصلی این پروژه بر دستگاه‌های اندرویدی قدیمی، منابع سخت‌افزاری محدود و نسخه‌های قدیمی سیستم‌عامل Android است.
 
-- فراهم‌کردن تجربه وب‌گردی ساده و قابل‌استفاده برای دستگاه‌های قدیمی اندرویدی
-- کاهش پیچیدگی رابط کاربری و تمرکز بر امکانات ضروری
-- ایجاد یک مرورگر مستقل با هویت بصری اختصاصی STAR
-- ارائه دسترسی سریع به جست‌وجو و وب‌سایت‌های پرکاربرد
-- ایجاد ساختاری قابل توسعه برای اضافه‌شدن قابلیت‌های جدید
-- توجه به سازگاری با نسخه‌های قدیمی Android
-- ارائه پروژه به‌صورت متن‌باز برای بررسی و توسعه
+هدف ما فراهم‌کردن دسترسی آسان‌تر به وب‌گردی برای دستگاه‌هایی است که ممکن است در اجرای مرورگرهای جدید و سنگین با محدودیت مواجه شوند.
 
-## 📱 مشخصات فنی
+## 🎯 Project Goals | اهداف پروژه
 
-| مشخصات | مقدار |
+- Lightweight and simple browsing experience.
+- Support for legacy Android devices.
+- Easy access to websites and search engines.
+- A clean and user-friendly interface.
+- Independent STAR branding and design.
+- Continuous development and future improvements.
+
+**اهداف اصلی پروژه:**
+
+- ارائه تجربه‌ای سبک و ساده از وب‌گردی
+- توجه ویژه به گوشی‌ها و دستگاه‌های اندرویدی قدیمی
+- دسترسی آسان به وب‌سایت‌ها و موتورهای جست‌وجو
+- طراحی رابط کاربری ساده و کاربردی
+- ایجاد یک مرورگر مستقل با هویت اختصاصی STAR
+- توسعه تدریجی و افزودن امکانات جدید
+
+## ✨ Features | امکانات
+
+The project is designed around the following browser features:
+
+- Web browsing with Android WebView
+- Google search integration
+- Home page and quick website shortcuts
+- Tab management
+- Bookmarks
+- Browsing history
+- Downloads
+- Browser settings
+- Night mode
+- About STAR page
+
+**امکانات در نظر گرفته‌شده برای مرورگر:**
+
+- وب‌گردی با Android WebView
+- جست‌وجوی Google
+- صفحه اصلی اختصاصی
+- میان‌بر وب‌سایت‌ها
+- مدیریت تب‌ها
+- نشانک‌ها
+- تاریخچه مرور
+- مدیریت دانلودها
+- تنظیمات مرورگر
+- حالت شب
+- صفحه معرفی STAR
+
+*Note: Feature availability may vary by release. See the current source code and release notes for implementation status.*
+
+*توجه: وضعیت پیاده‌سازی امکانات ممکن است در نسخه‌های مختلف متفاوت باشد. برای اطلاع از قابلیت‌های واقعاً آماده، به کد منبع و توضیحات انتشار هر نسخه مراجعه کنید.*
+
+## 📱 Compatibility | سازگاری
+
+| Specification | Details |
 |---|---|
-| نام برنامه | STAR BROWSER LEGACY |
-| نسخه | 1.0 |
-| نسخه کد | 1 |
-| توسعه‌دهنده | Radan |
-| برند | STAR |
-| سیستم‌عامل | Android |
-| حداقل نسخه | Android 4.2.2 |
+| Platform | Android |
+| Minimum Android Version | Android 4.2.2 |
 | Minimum SDK | API 17 |
-| Target SDK | API 28 |
-| Compile SDK | API 33 |
-| زبان برنامه‌نویسی | Java |
-| طراحی رابط کاربری | XML |
-| موتور نمایش صفحات | Android WebView |
-| موتور جست‌وجوی پیش‌فرض | Google |
-| شناسه برنامه | com.star.browserlegacy |
+| Programming Language | Java |
+| User Interface | XML |
+| Browser Engine | Android WebView |
+| Search Engine | Google |
+| Current Version | 1.0.0 |
 
-## ✨ امکانات نسخه 1.0
+**سازگاری:**
 
-### 🔎 مرور وب
-- نمایش صفحات وب با استفاده از Android WebView
-- نوار آدرس و جست‌وجو
-- جست‌وجوی عبارت‌های واردشده با Google
-- حرکت به صفحه قبلی و بعدی
-- بارگذاری صفحات اینترنتی
+این پروژه با هدف پشتیبانی از Android 4.2.2 به بالا طراحی شده است.
 
-### 🏠 صفحه اصلی STAR
-- صفحه شروع اختصاصی
-- دسترسی سریع به وب‌سایت‌های منتخب
-- میان‌برهای Google، YouTube، Wikipedia و GitHub
+با توجه به قدیمی‌بودن WebView در نسخه‌های قدیمی اندروید، ممکن است بعضی وب‌سایت‌های مدرن به‌درستی نمایش داده نشوند. سازگاری با تمام وب‌سایت‌ها تضمین نمی‌شود.
 
-### 📑 مدیریت تب‌ها
-- ایجاد تب جدید
-- جابه‌جایی میان تب‌ها
-- بستن تب‌ها
+## 🎨 STAR Identity | هویت STAR
 
-### ⭐ نشانک‌ها
-- ذخیره محلی وب‌سایت‌های موردعلاقه
-- دسترسی دوباره به صفحات ذخیره‌شده
+STAR BROWSER LEGACY uses a dedicated visual identity inspired by the STAR brand.
 
-### 🕘 تاریخچه
-- ثبت محلی صفحات بازدیدشده
-- مشاهده تاریخچه
-- امکان پاک‌کردن تاریخچه
+**Brand Colors:**
+- Navy Blue
+- Blue
+- Silver
 
-### 📥 دانلودها
-- استفاده از Android DownloadManager
-- ثبت و نمایش فهرست دانلودها
+**Brand Identity:**
 
-### ⚙️ تنظیمات
-- صفحه تنظیمات اختصاصی
-- تنظیم حالت شب
-- تنظیمات پایه مرورگر
+`POWERED BY STAR`
 
-### ℹ️ درباره برنامه
-- نمایش اطلاعات STAR BROWSER LEGACY
-- نمایش نام و نسخه برنامه
-- معرفی هویت برند STAR
+این مرورگر از هویت بصری اختصاصی STAR استفاده می‌کند و با رنگ‌های سرمه‌ای، آبی و نقره‌ای طراحی شده است.
 
-### 🔗 اشتراک‌گذاری
-- امکان اشتراک‌گذاری صفحه فعلی
+## 🛠️ Technologies | فناوری‌ها
 
-## 🎨 هویت بصری STAR
+- Java
+- XML
+- Android WebView
+- Android SDK
+- Gradle
+- GitHub Actions
 
-طراحی این مرورگر بر اساس هویت اختصاصی STAR انجام شده است.
+## 📦 Download | دریافت برنامه
 
-رنگ‌های اصلی پروژه:
+You can find available builds and releases in the GitHub Releases section.
 
-- سرمه‌ای (Navy)
-- آبی و فیروزه‌ای (Blue / Cyan)
-- نقره‌ای (Silver)
+**دریافت نسخه‌های منتشرشده:**
 
-هدف از این طراحی، ایجاد رابطی ساده، منظم و قابل تشخیص است.
+برای دریافت نسخه‌های قابل نصب، به بخش Releases مخزن مراجعه کنید.
 
-عبارت رسمی برند:
+## 🚀 Development | توسعه
 
-**POWERED BY STAR**
+STAR BROWSER LEGACY is an evolving project. Future releases may include improvements to performance, interface design, privacy controls, tab management, downloads, and customization.
 
-## 🧩 فناوری‌های استفاده‌شده
+این پروژه در حال توسعه است و در نسخه‌های آینده ممکن است امکانات جدید، بهینه‌سازی عملکرد، بهبود رابط کاربری و قابلیت‌های مدیریتی بیشتری به آن اضافه شود.
 
-**Java:** زبان اصلی توسعه برنامه.
+## ⚠️ Disclaimer | سلب مسئولیت
 
-**XML:** برای ساخت و تعریف رابط کاربری.
+This project is provided for development, testing, and educational purposes. Compatibility and functionality may vary depending on the Android version, WebView implementation, and device hardware.
 
-**Android WebView:** برای نمایش محتوای صفحات وب.
+این پروژه برای توسعه، آزمایش و استفاده آموزشی ارائه شده است. عملکرد و سازگاری آن ممکن است با توجه به نسخه اندروید، موتور WebView و سخت‌افزار دستگاه متفاوت باشد.
 
-**Android DownloadManager:** برای مدیریت دانلودها.
+## 👨‍💻 Developer | توسعه‌دهنده
 
-**Gradle:** سیستم ساخت و مدیریت وابستگی‌های پروژه.
+**Developer:** Radan
 
-**GitHub Actions:** برای خودکارسازی فرایند ساخت APK.
+**Project:** STAR BROWSER LEGACY
 
-## 📲 سازگاری و محدودیت‌ها
+**Brand:** STAR
 
-حداقل نسخه هدف این پروژه Android 4.2.2 است.
+## ⭐ Support the Project | حمایت از پروژه
 
-بااین‌حال، نسخه‌های قدیمی Android از WebView و فناوری‌های وب قدیمی‌تری استفاده می‌کنند. بنابراین ممکن است بعضی وب‌سایت‌های جدید به‌درستی نمایش داده نشوند یا اصلاً بارگذاری نشوند.
+If you find this project interesting, you can support its development by starring the GitHub repository, reporting bugs, and sharing suggestions.
 
-این مسئله به محدودیت موتور WebView و سیستم‌عامل مربوط است و لزوماً با تغییر تنظیمات مرورگر قابل حل نیست.
+اگر این پروژه برایتان جالب است، می‌توانید با ثبت Star در GitHub، گزارش مشکلات و ارائه پیشنهادها از توسعه آن حمایت کنید.
 
-STAR BROWSER LEGACY با هدف توجه ویژه به دستگاه‌های قدیمی طراحی شده، اما سازگاری کامل با تمام وب‌سایت‌ها تضمین نمی‌شود.
+---
 
-## 🚧 وضعیت توسعه
-
-نسخه 1.0 نقطه شروع توسعه STAR BROWSER LEGACY است.
-
-برخی قابلیت‌ها در این نسخه پایه‌ای هستند و امکانات پیشرفته‌تر هنوز در برنامه توسعه قرار دارند.
-
-موارد قابل توسعه در نسخه‌های آینده:
-
-- حالت ناشناس (Incognito)
-- پوشه‌بندی و ویرایش پیشرفته نشانک‌ها
-- مدیریت پیشرفته دانلودها
-- نمایش کارت‌های تصویری تب‌ها
-- شخصی‌سازی بیشتر صفحه اصلی
-- تنظیم موتور جست‌وجو
-- تنظیمات پیشرفته حریم خصوصی
-- بهبود رابط کاربری
-- بهینه‌سازی عملکرد روی دستگاه‌های قدیمی
-
-## 🛠️ ساخت پروژه و دریافت APK
-
-برای ساخت فایل APK می‌توان از GitHub Actions استفاده کرد.
-
-1. مخزن پروژه را در GitHub ایجاد یا باز کنید.
-2. فایل‌های پروژه را در مسیر اصلی مخزن قرار دهید.
-3. ساختار پوشه `.github/workflows` را حفظ کنید.
-4. وارد بخش Actions شوید.
-5. Workflow مربوط به Build STAR BROWSER LEGACY APK را اجرا کنید.
-6. پس از پایان موفقیت‌آمیز فرایند، Artifact ساخته‌شده را دریافت کنید.
-
-نام Artifact:
-
-`STAR-BROWSER-LEGACY-1.0-debug`
-
-نام فایل APK:
-
-`app-debug.apk`
-
-## 📂 ساختار کلی پروژه
-
-```text
-STAR_BROWSER_LEGACY/
-│
-├── .github/
-│   └── workflows/
-│       └── android.yml
-│
-├── app/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/
-│   │       │   └── com/star/browserlegacy/
-│   │       │       └── MainActivity.java
-│   │       │
-│   │       ├── res/
-│   │       │   ├── layout/
-│   │       │   └── values/
-│   │       │
-│   │       └── AndroidManifest.xml
-│   │
-│   └── build.gradle
-│
-├── build.gradle
-├── settings.gradle
-├── gradle.properties
-└── README.md
-```
-
-## 🔐 مجوزها
-
-برنامه برای عملکرد خود از مجوزهای پایه زیر استفاده می‌کند:
-
-- INTERNET
-- ACCESS_NETWORK_STATE
-- WRITE_EXTERNAL_STORAGE
-
-## 📌 نکته مهم
-
-این پروژه در نسخه 1.0 یک پایه اولیه قابل توسعه است و هنوز نباید آن را یک مرورگر کاملاً آزمایش‌شده و آماده انتشار عمومی در نظر گرفت.
-
-همچنین قابلیت‌های پیشرفته‌ای که در بخش توسعه آینده معرفی شده‌اند، به معنی پیاده‌سازی‌شدن آن‌ها در نسخه فعلی نیستند.
-
-## ⭐ چشم‌انداز STAR
-
-هدف STAR، ساخت نرم‌افزارهایی با هویت مستقل، طراحی اختصاصی و توجه به نیاز کاربران است.
-
-STAR BROWSER LEGACY اولین قدم در مسیر توسعه یک مرورگر اختصاصی برای دستگاه‌های اندرویدی قدیمی و جدید است.
+### ⭐ STAR BROWSER LEGACY
 
 **Built with Java. Powered by STAR.**
 
----
-
-**STAR BROWSER LEGACY 1.0**
-
 © 2026 STAR Project
-
-**Developer: Radan**
