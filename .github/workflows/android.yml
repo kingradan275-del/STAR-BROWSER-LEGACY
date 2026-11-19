@@ -32,27 +32,30 @@ jobs:
 
       - name: Configure Android SDK
         run: |
-          echo "ANDROID_HOME=/usr/local/lib/android/sdk" >> $GITHUB_ENV
-          echo "/usr/local/lib/android/sdk/cmdline-tools/latest/bin" >> $GITHUB_PATH
-          echo "/usr/local/lib/android/sdk/platform-tools" >> $GITHUB_PATH
-          echo "/usr/local/lib/android/sdk/tools/bin" >> $GITHUB_PATH
+          echo "ANDROID_HOME=/usr/local/lib/android/sdk" >> "$GITHUB_ENV"
+          echo "/usr/local/lib/android/sdk/cmdline-tools/latest/bin" >> "$GITHUB_PATH"
+          echo "/usr/local/lib/android/sdk/platform-tools" >> "$GITHUB_PATH"
 
       - name: Locate Android SDK Manager
         run: |
           echo "Searching for sdkmanager..."
-          find /usr/local/lib/android/sdk -name sdkmanager -type f
-          SDKMANAGER=$(find /usr/local/lib/android/sdk -name sdkmanager -type f | head -n 1)
+          SDKMANAGER=$(find "$ANDROID_HOME" -name sdkmanager -type f | head -n 1)
+
           if [ -z "$SDKMANAGER" ]; then
             echo "ERROR: sdkmanager was not found."
             exit 1
           fi
-          echo "SDKMANAGER=$SDKMANAGER" >> $GITHUB_ENV
-          echo "$(dirname "$SDKMANAGER")" >> $GITHUB_PATH
+
+          echo "SDKMANAGER=$SDKMANAGER" >> "$GITHUB_ENV"
+          echo "$(dirname "$SDKMANAGER")" >> "$GITHUB_PATH"
 
       - name: Install Android SDK packages
         run: |
           yes | "$SDKMANAGER" --licenses || true
-          "$SDKMANAGER" "platform-tools" "platforms;android-33" "build-tools;33.0.2"
+          "$SDKMANAGER" \
+            "platform-tools" \
+            "platforms;android-33" \
+            "build-tools;30.0.3"
 
       - name: Set up Gradle 7.5
         uses: gradle/actions/setup-gradle@v4
@@ -65,10 +68,32 @@ jobs:
           gradle --version
           "$SDKMANAGER" --version
 
+      - name: Inspect AndroidManifest.xml
+        run: |
+          echo "===== MANIFEST CONTENT ====="
+          cat -A app/src/main/AndroidManifest.xml
+
+          echo "===== XML VALIDATION ====="
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+
+          path = "app/src/main/AndroidManifest.xml"
+
+          try:
+              ET.parse(path)
+              print("XML validation: SUCCESS")
+          except ET.ParseError as error:
+              print("XML validation: FAILED")
+              print(error)
+              raise
+          PY
+
       - name: Build Debug APK
-        run: gradle assembleDebug
+        run: |
+          gradle assembleDebug --stacktrace --info
 
       - name: Upload APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: STAR-BROWSER-LEGACY-1.0-APK
